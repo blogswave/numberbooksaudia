@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | KSA Number Book</title>
+    <meta name="description" content="تواصل مع فريق دعم نمبر بوك السعودية لأي استفسارات أو ملاحظات.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">KSA <span>Number Book</span></a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="privacy.html">سياسة الخصوصية</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>اتصل بنا</h1>
+        <p>نحن هنا لمساعدتك. لا تتردد في التواصل معنا في أي وقت.</p>
+    </div>
+
+    <main class="main-content">
+        <div class="tool-container" style="margin: 0 auto;">
+            <form action="#" method="POST" id="contact-form">
+                <div class="form-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">إرسال الرسالة</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>عن الموقع</h4>
+                <p>KSA Number Book هو الدليل الشامل لمعرفة هوية المتصل في المملكة العربية السعودية بكل سهولة ومجاناً.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>سياسات</h4>
+                <ul>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 KSA Number Book. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('contact-form')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('تم إرسال رسالتك بنجاح! شكراً لتواصلك معنا.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
